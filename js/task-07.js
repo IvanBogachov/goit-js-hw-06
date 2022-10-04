@@ -1,8 +1,8 @@
-const inputChange = document.querySelector('input#font-size-control')
-const textField = document.querySelector('span#text')
+const inputChange = document.querySelector('#font-size-control')
+const textField = document.querySelector('#text')
 
-inputChange.addEventListener('input', changeSizeRange)
+inputChange.addEventListener('input', changeSizeRange);
 
 function changeSizeRange(event) {
-   textField.style.fontSize = `${event.target.value}px`
+   textField.style.fontSize = event.currentTarget.value + 'px'
 }
